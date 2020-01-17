@@ -16,17 +16,6 @@
   padding-top: 4px;
 }
 
-.nso-image {
-  padding-bottom: 4px;
-  padding-top: 4px;
-}
-
-img {
-  padding:1px;
-  border:1px solid #021a40;
-  background-color:#fff;
-}
-
 .nso-code {
   font-family:'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   line-height:normal;
@@ -38,5 +27,22 @@ img {
 }
 
 .nso-title {
-  padding-bottom: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #486581;
+}
+
+.nso-header-2 {
+  margin-top: 8px;
+}
+
+.nso-pre-code {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+img {
+  margin: 4px;
+  padding:4px;
+  border:1px solid #486581;
+  background-color:whitesmoke;
 }

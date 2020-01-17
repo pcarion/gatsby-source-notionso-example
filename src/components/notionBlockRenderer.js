@@ -41,7 +41,7 @@ function renderBlockImage(meta) {
 function renderBlockCode(children, meta) {
   const hlslanguage = notionLanguageToHljs[meta.language] || 'plaintext';
   const highlightedCode = hljs.highlight(hlslanguage, meta.title).value;
-  return <pre dangerouslySetInnerHTML={{ __html: highlightedCode }} />;
+  return <pre className="nso-pre-code" dangerouslySetInnerHTML={{ __html: highlightedCode }} />;
 }
 
 function renderBlockText(children) {
@@ -51,12 +51,12 @@ function renderBlockText(children) {
 function renderBlockHeader(children, level) {
   switch (level) {
     case 1:
-      return <p className="title is-1">{children}</p>;
+      return <p className="nso-header-1 has-text-primary has-background-white-bis subtitle is-2">{children}</p>;
     case 2:
-      return <p className="subtitle is-3">{children}</p>;
+      return <p className="nso-header-2 has-text-primary has-background-white-bis subtitle is-3">{children}</p>;
     case 3:
     default:
-      return <p className="subtitle is-5">{children}</p>;
+      return <p className="nso-header-3 has-text-primary has-background-white-bis subtitle is-5">{children}</p>;
   }
 }
 

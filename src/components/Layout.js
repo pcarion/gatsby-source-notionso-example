@@ -32,7 +32,7 @@ const Layout = ({ meta, children }) => {
         <div className="container">
           <div className="columns">
             <div className="column"></div>
-            <div className="column is-four-fifths">{children}</div>
+            <div className="column is-two-thirds">{children}</div>
             <div className="column"></div>
           </div>
         </div>
